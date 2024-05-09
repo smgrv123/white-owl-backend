@@ -1,4 +1,3 @@
-// const mongoose = require("mongoose");
 import mongoose from 'mongoose';
 
 const filmsSchema = new mongoose.Schema({
@@ -15,6 +14,10 @@ const filmsSchema = new mongoose.Schema({
     required: true
   },
   heroImageId: {
+    type: String,
+    required: true
+  },
+  category: {
     type: String,
     required: true
   }
